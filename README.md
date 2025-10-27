@@ -1,2 +1,3 @@
 # ImperviousWaterQuality-Vu
-Impervious Cover by Land Use in Calgary
+Impervious Cover by Land Use in Calgary - GEOG 587
+
