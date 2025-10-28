@@ -6,8 +6,10 @@ Folder Structure:
    - `data/` - raw and processed dataset
       - `Raw` CityBoundary, Impervious_Surface_Calgary_original.csv, FloodMap-Calgary_original, LandUse_Calgary_Original
       - `Processed` FloodMap_Calgary, ImperviousByLandUse, 
-   - `outputs/` - layout of final maps: % IMPERVIOUS AND FLOOD ZONE BY Land Use CALGARY.pdf and % IMPERVIOUS BY Land Use CALGARY.pdf
-   - `Documentation` -  README
+   - `outputs/` - layout of final maps:
+      - % IMPERVIOUS AND FLOOD ZONE BY Land Use CALGARY.pdf
+      - % IMPERVIOUS BY Land Use CALGARY.pdf
+   - `Documentation` -  README     
 Coordinates Systems and Data formats
    - `Coordinates Systems` Projected NAD 1983 3TM 114W
    - `Data Formats` csv, pdf
