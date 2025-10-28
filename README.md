@@ -1,7 +1,10 @@
 # ImperviousWaterQuality-Vu
 Impervious Cover by Land Use in Calgary - GEOG 587
+
 Author: Tram Anh Vu
+
 Overview: This repository packages my geospatial analysis on Impervious Cover by Land Use in Calgary
+
 Folder Structure: 
    - `data/` - raw and processed dataset
       - `Raw` CityBoundary, Impervious_Surface_Calgary_original.csv, FloodMap-Calgary_original, LandUse_Calgary_Original
@@ -10,9 +13,11 @@ Folder Structure:
       - % IMPERVIOUS AND FLOOD ZONE BY Land Use CALGARY.pdf
       - % IMPERVIOUS BY Land Use CALGARY.pdf
    - `Documentation` -  README     
+
 Coordinates Systems and Data formats
    - `Coordinates Systems` Projected NAD 1983 3TM 114W
    - `Data Formats` csv, pdf
+
 Data Source
    - `City of Calgary Open Data Portal`
      - `Impervious Surface 2021` last updated May 28, 2024, was accessed on October 1, 2025, link for access https://data.calgary.ca/Environment/Impervious-Surface-2021/rgsu-3v7u/about_data
