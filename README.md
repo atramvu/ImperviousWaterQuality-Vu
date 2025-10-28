@@ -28,10 +28,18 @@ Data Source
 
 Data Dictionary
 
+   ImperviousByLandUse data
+   
    - `Imp_Area_m2` area of Impervious Surfaces in each land use categories in meter square. It was calculated using the Geometry Field Calculator tool.
    - `LU_Simple` description of each land use categories such as Commercial, Industrial, Institutional, Parks, Residential, Transportation and Agriculture
    - `LU_Area_m2` area of total land use for each categories in meter square
    - `% Impervious` Percentage of Impervious Surface in each land use categories. It was calculated using the Field Calculator tool. It was calculated using the formula (Imp_Area_m2)*100/(LU_Area_m2)
+
+   FloodMap_Calgary data
+
+   - `Descriptio` is the description of each flood hazardous zones in the city of Calgary
+   - `flood-cd` is the number of year of flood reoccurence 
+   - `Perimeter` is the perimeter of each polygons
     
 Workflow Summary
 
