@@ -61,6 +61,7 @@ Workflow Summary
 License
 
    - This repository is shared uner the Creative Commons Attribution 4.0 International (CC BY 4.0)
+     
 Citation
 
   - Vu, T.A. (2025), *Impervious Cover by Land Use in Calgary*. GEOG 587 - University of Calgary
