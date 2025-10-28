@@ -27,14 +27,18 @@ Data Source
      - `World Topographic Map` accessed on October , 2025, link for access https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer
 
 Data Dictionary
-
     - `Imp_Area_m2` area of Impervious Surfaces in each land use categories in meter square. It was calculated using the Geometry Field Calculator tool.
     - `LU_Simple` description of each land use categories such as Commercial, Industrial, Institutional, Parks, Residential, Transportation and Agriculture
     - `LU_Area_m2` area of total land use for each categories in meter square
     - `% Impervious` Percentage of Impervious Surface in each land use categories. It was calculated using the Field Calculator tool. It was calculated using the formula (Imp_Area_m2)*100/(LU_Area_m2)
+    
 Workflow Summary
+
    Raw data obtained from the City of Calgary Open Data Portal was analyzed using geospatial tools in ArcGIS Pro.
-    - Reclassifiation of the detailed `LandUse_Calgary_original` dataset to simplify it into 9 main categories: Agricultural and Natural Resources, Parks/Open Space, Institution, Transportation/Utility, Other, Residential Low/Medium Density, Residential Hight Density, Industrial, and Commercial/Mixed Use
+    - Reclassifiation of the detailed `LandUse_Calgary_original` dataset to simplify it into 9 main categories: Agricultural and Natural Resources, Parks/Open Space, Institution, Transportation/Utility, Other, Residential 
+    
+   Low/Medium Density, Residential Hight Density, Industrial, and Commercial/Mixed Use
+   
     - Dissolve all polygons within each reclassified land use categories to merge them into one feature using the Dissolve tool.
     - Dissolve all Impervious Polygons to create a single Impervious Surface layer using the Dissolve tool
     - Intersect the Impervious Surface layer with the Dissolved Land Use layer to calculate the Impervious Surface by Land Use, this create a new data called `ImperviousByLandUse`.
@@ -43,9 +47,14 @@ Workflow Summary
     - Displayed the `ImperviousByLandUse` data using the field `% Impervious` using the Graduated Colours option with 9 classes and Natural Breaks (Jenks) method, the colour scheme was light as least % Impervious Surface to dark red as most % Impervious Surface
     - Rename the `Regulatory Flood Map (Bylaw Flood Hazard)` data to `FloodMap_Calgary`, displayed it with 30% transparent overlay on top of the Impervious surface data.
     - The City Boundary was displayed as grey thick outline 
+    
 License
+
    This repository is shared uner the Creative Commons Attribution 4.0 International (CC BY 4.0)
 Citation
+
    Vu, T.A. (2025), *Impervious Cover by Land Use in Calgary*. GEOG 587 - University of Calgary
+   
 Contact
+
    Tram Anh Vu atramvu@gmail.com 
