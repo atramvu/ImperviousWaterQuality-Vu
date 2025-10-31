@@ -67,38 +67,22 @@ Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS Us
    - **Calculate Field**: `Pct_Impervious = (Imp_Area_m2 / LU_Area_m2) * 100`.
 
 5. **Symbology**  
-   - **Graduated Colors** on `Pct_Impervious`, **9 classes**, **Natural Breaks (Jenks)**.  
+   - **Graduated Colors** on `Percent_Impervious`, **9 classes**, **Natural Breaks (Jenks)**.  
    - Light color = low %, dark red = high %.  
    - Add **FloodMap_Calgary** with ~30% transparency above the impervious choropleth.  
-   - City boundary with a neutral, thick outline.
+   - City boundary with a neutral grey, thick outline.
 
 6. **Map Layouts**  
    - Export to `outputs/Calgary_Impervious_by_LandUse.pdf` and  
      `outputs/Calgary_Impervious_and_FloodZone_by_LandUse.pdf`.
 
+## How to Reproduce
+ - Software: **ArcGIS Pro**
+ - Steps: Set the Map projection to Projected CRS NAD 1983 3TM 114W, units: meters. Add raw data layers to the Map Content.
+ - Run tools in the *Methods/Workflow Summary* Section
+ - Geoproecessing Tools to use: **Reclassify**, **Dissolve**, **Intersect**, **Add Field**, **Field Calculator**, **Geometry Calculator**
+ - Symbology: Use Graduated colors on the `Percent_Impervious` field, set the flood categories to 30% transparency
    
-   1. **Reclassifiation Land Use**
-      - Create `LU_Simple` mapping detailed classes into 9 main categories:
-         - Agricultural and Natural Resources,
-         - Parks/Open Space,
-         - Institution,
-         - Transportation/Utility,
-         - Other,
-         - Residential   
-         - Low/Medium Density,
-         - Residential Hight Density,
-         - Industrial, and
-         - Commercial/Mixed Use
-   2. **Prepare Impervious Layer**
-      - Dissolve all polygons within each reclassified land use categories to merge them into one feature using the Dissolve tool.
-   - Dissolve all Impervious Polygons to create a single Impervious Surface layer using the Dissolve tool
-   - Intersect the Impervious Surface layer with the Dissolved Land Use layer to calculate the Impervious Surface by Land Use, this create a new data called `ImperviousByLandUse`.
-   - In the `ImperviousByLandUse` data, calculated 2 fields: Impervious Area in m2 and Land Use in m2, both fields were calculated using the Geometry Calculator tool.
-   - In the `ImperviousByLandUse` data, calculated another field called `% Impervious by Land Use`, used the field calculator tool and compute this formula (Imp_Area_m2)*100/(LU_Area_m2)
-   - Displayed the `ImperviousByLandUse` data using the field `% Impervious` using the Graduated Colours option with 9 classes and Natural Breaks (Jenks) method, the colour scheme was light as least % Impervious Surface to dark red as most % Impervious Surface
-   - Rename the `Regulatory Flood Map (Bylaw Flood Hazard)` data to `FloodMap_Calgary`, displayed it with 30% transparent overlay on top of the Impervious surface data.
-   - The City Boundary was displayed as grey thick outline 
-    
 License
 
    - This repository is shared uner the Creative Commons Attribution 4.0 International (CC BY 4.0)
