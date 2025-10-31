@@ -20,6 +20,19 @@ Author: Tram Anh Vu
    - `Data Formats` csv, pdf, lyrx 
 
 ## Data Source
+**City of Calgary Open Data Portal**
+- Impervious Surface 2021 — *last updated* 2024-05-28; *accessed* 2025-10-01  
+  https://data.calgary.ca/Environment/Impervious-Surface-2021/rgsu-3v7u/about_data
+- Land Use Districts — *last updated* 2025-10-22; *accessed* 2025-10-13  
+  https://data.calgary.ca/Base-Maps/Land-Use-Districts/qe6k-p9nh/about_data
+- Regulatory Flood Map (Bylaw Flood Hazard) — *last updated* 2024-06-27; *accessed* 2025-10-22  
+  https://data.calgary.ca/Environment/Regulatory-Flood-Map-Bylaw-Flood-Hazard-/tp6q-x2v7/about_data
+
+**Basemap & reference providers**  
+Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS User Community  
+- World Topographic Map — *accessed* 2025-10  
+  https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer
+
    ** City of Calgary Open Data Portal**
      - `Impervious Surface 2021` last updated May 28, 2024, was accessed on October 1, 2025, link for access https://data.calgary.ca/Environment/Impervious-Surface-2021/rgsu-3v7u/about_data
      - `Land Use Districts` last updated October 22, 2025, was accessed on October 13, 2025, link for access https://data.calgary.ca/Base-Maps/Land-Use-Districts/qe6k-p9nh/about_data
