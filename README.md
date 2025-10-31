@@ -3,8 +3,10 @@ Impervious Cover by Land Use in Calgary - GEOG 587
 
 Author: Tram Anh Vu
 
-## Overview: This project quantifies impervious within generalized land use categories for Calgary, then overlays Regulatory Flood Hazard polygons to interpret where elevated runoff potential intersects designated flood zones. The workflow is fully documented to support the analysis of the study.
-## Purpose: to understand whether impervious surface functions as a practical indicator for urban water and soil impacts, giving its general role in generating runoff, transporting pllutants and alternating hydrographs. By overlaying land use with flood hazard, the analysis offers a simple, transparent approach that planners and students can replicate, critique and extend.
+## Overview: 
+This project quantifies impervious within generalized land use categories for Calgary, then overlays Regulatory Flood Hazard polygons to interpret where elevated runoff potential intersects designated flood zones. The workflow is fully documented to support the analysis of the study.
+## Purpose: 
+To understand whether impervious surface functions as a practical indicator for urban water and soil impacts, giving its general role in generating runoff, transporting pllutants and alternating hydrographs. By overlaying land use with flood hazard, the analysis offers a simple, transparent approach that planners and students can replicate, critique and extend.
 
 ## Folder Structure: 
    - `data/` - raw and processed dataset
@@ -83,14 +85,14 @@ Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS Us
  - Geoproecessing Tools to use: **Reclassify**, **Dissolve**, **Intersect**, **Add Field**, **Field Calculator**, **Geometry Calculator**
  - Symbology: Use Graduated colors on the `Percent_Impervious` field, set the flood categories to 30% transparency
    
-License
+## License
 
    - This repository is shared uner the Creative Commons Attribution 4.0 International (CC BY 4.0)
      
-Citation
+## Citation
 
   - Vu, T.A. (2025), *Impervious Cover by Land Use in Calgary*. GEOG 587 - University of Calgary
    
-Contact
+## Contact
 
   - Tram Anh Vu atramvu@gmail.com 
