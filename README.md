@@ -50,7 +50,7 @@ Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS Us
    - `flood-cd` is the number of year of flood reoccurence 
    - `Perimeter` is the perimeter of each polygons
     
-### Methods/ Workflow Summary (ArcGIS Pro)
+## Methods/ Workflow Summary (ArcGIS Pro)
 
    Raw data obtained from the City of Calgary Open Data Portal was analyzed using geospatial tools in ArcGIS Pro.
 
