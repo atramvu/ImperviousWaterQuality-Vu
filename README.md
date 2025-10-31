@@ -33,15 +33,6 @@ Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS Us
 - World Topographic Map — *accessed* 2025-10  
   https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer
 
-   ** City of Calgary Open Data Portal**
-     - `Impervious Surface 2021` last updated May 28, 2024, was accessed on October 1, 2025, link for access https://data.calgary.ca/Environment/Impervious-Surface-2021/rgsu-3v7u/about_data
-     - `Land Use Districts` last updated October 22, 2025, was accessed on October 13, 2025, link for access https://data.calgary.ca/Base-Maps/Land-Use-Districts/qe6k-p9nh/about_data
-     - `Regulatory Flood Map (Bylaw Flood Hazard)` last updated June 27, 2024, was accessed on October 22, 2025, link for access https://data.calgary.ca/Environment/Regulatory-Flood-Map-Bylaw-Flood-Hazard-/tp6q-x2v7/about_data
-     
-   **Basemap & Reference providers** 
-   Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap Contributors, and the GIS User Community
-     - `World Topographic Map` accessed on October, 2025, link for access https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer
-
 ## Data Dictionary
 
   ### ImperviousByLandUse data
