@@ -51,6 +51,31 @@ Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS Us
 ### Methods/ Workflow Summary (ArcGIS Pro)
 
    Raw data obtained from the City of Calgary Open Data Portal was analyzed using geospatial tools in ArcGIS Pro.
+
+1. **Reclassify Land Use**  
+   - Create `LU_Simple` mapping detailed classes into 9 categories (above).  
+   - *Tool(s):* Field mapping / attribute rule, then **Dissolve** by `LU_Simple` → `LandUse_Reclassified_Dissolved`.
+
+2. **Prepare Impervious Layer**  
+   - **Dissolve** all impervious polygons → `Impervious_Dissolved`.
+
+3. **Intersect**  
+   - **Intersect** `Impervious_Dissolved` with `LandUse_Reclassified_Dissolved` → `ImperviousByLandUse`.
+
+4. **Add Geometry & Calculate Fields**  
+   - **Add Geometry Attributes** to compute `Imp_Area_m2` (impervious parts) and `LU_Area_m2`.  
+   - **Calculate Field**: `Pct_Impervious = (Imp_Area_m2 / LU_Area_m2) * 100`.
+
+5. **Symbology**  
+   - **Graduated Colors** on `Pct_Impervious`, **9 classes**, **Natural Breaks (Jenks)**.  
+   - Light color = low %, dark red = high %.  
+   - Add **FloodMap_Calgary** with ~30% transparency above the impervious choropleth.  
+   - City boundary with a neutral, thick outline.
+
+6. **Map Layouts**  
+   - Export to `outputs/Calgary_Impervious_by_LandUse.pdf` and  
+     `outputs/Calgary_Impervious_and_FloodZone_by_LandUse.pdf`.
+
    
    1. **Reclassifiation Land Use**
       - Create `LU_Simple` mapping detailed classes into 9 main categories:
@@ -64,8 +89,8 @@ Esri, USGS, CGIAR, TomTom, Garmin, FAO, NOAA, OpenStreetMap contributors, GIS Us
          - Residential Hight Density,
          - Industrial, and
          - Commercial/Mixed Use
-   
-   - Dissolve all polygons within each reclassified land use categories to merge them into one feature using the Dissolve tool.
+   2. **Prepare Impervious Layer**
+      - Dissolve all polygons within each reclassified land use categories to merge them into one feature using the Dissolve tool.
    - Dissolve all Impervious Polygons to create a single Impervious Surface layer using the Dissolve tool
    - Intersect the Impervious Surface layer with the Dissolved Land Use layer to calculate the Impervious Surface by Land Use, this create a new data called `ImperviousByLandUse`.
    - In the `ImperviousByLandUse` data, calculated 2 fields: Impervious Area in m2 and Land Use in m2, both fields were calculated using the Geometry Calculator tool.
